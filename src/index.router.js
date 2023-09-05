@@ -22,7 +22,9 @@ const initApp = (app, express) => {
   });
   //convert Buffer Data
   //Setup API Routing
-
+  app.get("/", (req, res, next) => {
+    res.status(200).send("welcome to E-commerce App ");
+  });
   app.use(`/auth`, authRouter);
   app.use(`/user`, userRouter);
   app.use(`/product`, productRouter);

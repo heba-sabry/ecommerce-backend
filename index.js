@@ -13,6 +13,4 @@ const port = process.env.PORT || 5000;
 initApp(app, express);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-app.get("/", (req, res, next) => {
-  res.status(200).send("welcome to E-commerce App ");
-});
+
